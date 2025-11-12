@@ -1,0 +1,403 @@
+/* Footer Section */
+.footer {
+  width: 100%;
+  background: #1a1a1a;
+  color: #ffffff;
+  position: relative;
+  padding: 60px 20px 0;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Footer Brand Column */
+.footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  margin-bottom: 5px;
+}
+
+.logo-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #E53935;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-text {
+  color: white;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.footer-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #ffffff;
+  margin: 0;
+  max-width: 320px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+  margin-top: 5px;
+}
+
+.social-link {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-decoration: none;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.social-link:hover {
+  background: #E53935;
+  border-color: #E53935;
+  transform: translateY(-3px);
+}
+
+/* Footer Columns */
+.footer-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-column-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 10px 0;
+}
+
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-link {
+  color: #b0b0b0;
+  text-decoration: none;
+  font-size: 15px;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.footer-link:hover {
+  color: #E53935;
+  padding-left: 5px;
+}
+
+/* Emergency Contact Card */
+.footer-emergency {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.emergency-card-footer {
+  background: #252525;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 20px 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  max-width: 300px;
+  width: 100%;
+}
+
+.emergency-light-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  object-fit: cover;
+}
+
+.light-svg {
+  filter: drop-shadow(0 5px 15px rgba(255, 0, 0, 0.4));
+}
+
+.light-glow {
+  animation: pulse 2s ease-in-out infinite;
+}
+
+.light-bulb {
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.8;
+  }
+}
+
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.6;
+  }
+}
+
+.emergency-phone {
+  color: #E53935;
+  font-size: 22px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s;
+  text-align: center;
+}
+
+.emergency-phone:hover {
+  color: #ff4444;
+  transform: scale(1.05);
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+}
+
+.footer-copyright p {
+  margin: 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.copyright-link {
+  color: #E53935;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.copyright-link:hover {
+  color: #ff4444;
+}
+
+.footer-address {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.address-icon {
+  color: #E53935;
+}
+
+/* Floating Buttons */
+.chat-button-footer {
+  position: fixed;
+  bottom: 100px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #E53935;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(229, 57, 53, 0.4);
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.chat-button-footer:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(229, 57, 53, 0.5);
+}
+
+.light-red-footer{
+        width: 240px;
+height: 160px;
+}
+
+.scroll-top-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #E53935;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 20px rgba(229, 57, 53, 0.4);
+  transition: all 0.3s;
+  z-index: 999;
+}
+
+.scroll-top-button:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(229, 57, 53, 0.5);
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .footer {
+    padding: 50px 20px 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+  }
+
+  .footer-brand {
+    grid-column: 1 / -1;
+  }
+
+  .footer-emergency {
+    grid-column: 1 / -1;
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .chat-button-footer {
+    bottom: 90px;
+    right: 20px;
+    width: 55px;
+    height: 55px;
+  }
+
+  .scroll-top-button {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding: 40px 15px 0;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-title {
+    font-size: 24px;
+  }
+
+  .footer-column-title {
+    font-size: 18px;
+  }
+
+  .footer-link {
+    font-size: 14px;
+  }
+
+  .footer-social {
+    gap: 10px;
+  }
+
+  .social-link {
+    width: 38px;
+    height: 38px;
+  }
+
+  .emergency-card {
+    max-width: 100%;
+    padding: 25px 20px;
+  }
+
+  .emergency-phone {
+    font-size: 20px;
+  }
+
+  .footer-copyright p,
+  .footer-address {
+    font-size: 13px;
+  }
+
+  .chat-button-footer {
+    width: 50px;
+    height: 50px;
+    bottom: 80px;
+  }
+
+  .scroll-top-button {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-title {
+    font-size: 20px;
+  }
+
+  .footer-column-title {
+    font-size: 16px;
+  }
+
+  .emergency-phone {
+    font-size: 18px;
+  }
+
+  .logo-circle {
+    width: 45px;
+    height: 45px;
+  }
+
+  .logo-text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,230 @@
+/* Ambulance Category Section Styles */
+.ambulance-category-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.ambulance-badge {
+  background: transparent;
+  border: 2px solid #dc2626;
+  color: #dc2626;
+  padding: 10px 30px;
+  border-radius: 30px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.ambulance-title {
+  color: #1f2937;
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.ambulance-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1400px;
+  width: 100%;
+  padding: 0 20px;
+}
+
+.ambulance-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  height: 280px;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ambulance-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.ambulance-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 1;
+}
+
+.ambulance-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* Color Overlays */
+.ambulance-card.red .ambulance-overlay {
+  background: linear-gradient(135deg, rgba(185, 28, 28, 0.9) 0%, rgba(220, 38, 38, 0.7) 100%);
+}
+
+.ambulance-card.blue .ambulance-overlay {
+  background: linear-gradient(135deg, rgba(29, 78, 216, 0.9) 0%, rgba(37, 99, 235, 0.7) 100%);
+}
+
+.ambulance-card.green .ambulance-overlay {
+  background: linear-gradient(135deg, rgba(21, 128, 61, 0.9) 0%, rgba(34, 197, 94, 0.7) 100%);
+}
+
+.ambulance-card.orange .ambulance-overlay {
+  background: linear-gradient(135deg, rgba(180, 83, 9, 0.9) 0%, rgba(217, 119, 6, 0.7) 100%);
+}
+
+.ambulance-type {
+  color: white;
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  line-height: 1.2;
+}
+
+.ambulance-description {
+  color: rgba(255, 255, 255, 0.95);
+  font-size: 15px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+  max-width: 350px;
+}
+
+.quote-btn {
+  background: white;
+  color: #1f2937;
+  border: none;
+  padding: 14px 32px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: fit-content;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.quote-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+}
+
+.ambulance-card.red .quote-btn:hover {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+.ambulance-card.blue .quote-btn:hover {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+.ambulance-card.green .quote-btn:hover {
+  background: #f0fdf4;
+  color: #16a34a;
+}
+
+.ambulance-card.orange .quote-btn:hover {
+  background: #fffbeb;
+  color: #d97706;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .ambulance-grid {
+    gap: 25px;
+  }
+  
+  .ambulance-card {
+    height: 260px;
+  }
+  
+  .ambulance-type {
+    font-size: 32px;
+  }
+  
+  .ambulance-overlay {
+    padding: 35px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ambulance-category-section {
+    padding: 60px 15px;
+  }
+  
+  .ambulance-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  
+  .ambulance-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  
+  .ambulance-card {
+    height: 280px;
+  }
+  
+  .ambulance-overlay {
+    padding: 30px;
+  }
+  
+  .ambulance-type {
+    font-size: 28px;
+  }
+  
+  .ambulance-description {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+  
+  .quote-btn {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ambulance-title {
+    font-size: 28px;
+  }
+  
+  .ambulance-badge {
+    font-size: 12px;
+    padding: 8px 24px;
+  }
+  
+  .ambulance-card {
+    height: 260px;
+  }
+  
+  .ambulance-overlay {
+    padding: 25px;
+  }
+  
+  .ambulance-type {
+    font-size: 24px;
+  }
+}
