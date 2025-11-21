@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Check } from 'lucide-react';
 import '../Style/ExcellenceSection.css';
-import img1 from "../../public/product-jpeg.jpeg"
+import img1 from "../../public/dd.jpg"
 import img2 from "../../public/Emergency-Light-PNG-removebg-preview.png"
 
 const ExcellenceSection = () => {
@@ -77,17 +77,37 @@ const ExcellenceSection = () => {
             services. Our team of highly trained and experienced professionals
           </p>
 
-          {/* Features List */}
-          <div className="features-grid">
-            {features.map((feature, index) => (
-              <div key={index} className="feature-item">
-                <div className="feature-icon">
-                  {feature.icon}
-                </div>
-                <span className="feature-text">{feature.text}</span>
-              </div>
-            ))}
-          </div>
+        {/* Tab Content (Mission / Vision / History) */}
+<div className="tab-content">
+  {activeTab === "mission" && (
+    <p>
+      Our mission is to provide fast, reliable, and high-quality emergency
+      medical services. We aim to ensure that every patient receives prompt
+      care, advanced medical support, and compassionate assistance during
+      critical moments.
+    </p>
+  )}
+
+  {activeTab === "vision" && (
+    <p>
+      Our vision is to become the most trusted emergency healthcare provider
+      in the region. We strive to deliver innovative medical solutions,
+      expand our service reach, and continuously upgrade our technology to
+      save more lives.
+    </p>
+  )}
+
+  {activeTab === "history" && (
+    <p>
+      Amcare was established in 2009 with just one emergency vehicle and two
+      medical staff. Over the years, we expanded to a fleet of 40+ ambulances
+      and a dedicated medical team. In 2015, we introduced our advanced 
+      life-support units, making us one of the leading emergency response 
+      providers in the city.
+    </p>
+  )}
+</div>
+
         </div>
       </div>
 

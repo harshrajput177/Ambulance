@@ -2,11 +2,13 @@ import { useState } from 'react'
 import './App.css'
 import AmcareLanding from './Component/LandingCom1'
 import ContactPage from './Page/LandingPage'
+import Navbar from './Component/Navbar'
 
 function App() {
 
   return (
     <>
+    <Navbar />
       <ContactPage />
     </>
   )

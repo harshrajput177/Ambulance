@@ -9,16 +9,14 @@ const Footer = () => {
   };
 
   const whoWeAreLinks = [
+    { label: 'Home', href: '#home' },
     { label: 'About us', href: '#about' },
-    { label: 'Our Team', href: '#team' },
     { label: 'Services', href: '#services' },
     { label: "FAQ's", href: '#faq' },
-    { label: 'Our Fleet', href: '#fleet' }
   ];
 
   const moreLinks = [
-    { label: 'Events', href: '#events' },
-    { label: 'Training', href: '#training' },
+    { label: 'Process', href: '#process' },
     { label: 'Contact us', href: '#contact' },
     { label: 'Privacy Policy', href: '#privacy' },
     { label: 'Blog', href: '#blog' }
@@ -95,7 +93,7 @@ const Footer = () => {
               <img className='light-red-footer   light-svg  light-glow' src={img2} alt="" />
               </div>
               <a href="tel:+12463330089" className="emergency-phone">
-                + 1 (246) 333-0089
+                +91 8178505081
               </a>
             </div>
           </div>

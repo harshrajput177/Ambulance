@@ -52,7 +52,7 @@
   justify-content: center;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
   animation: rotate 20s linear infinite;
-  z-index: 100 !important;
+  z-index: 10 !important;
 }
 
 @keyframes rotate {
@@ -133,6 +133,7 @@
 }
 
 .excellence-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 42px;
   font-weight: 700;
   color: #1a1a1a;
@@ -166,6 +167,7 @@
 }
 
 .tab-button.active {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   background: #E53935;
   border-color: #E53935;
   color: white;
@@ -177,6 +179,13 @@
   line-height: 1.7;
   color: #666;
   margin: 0;
+}
+
+
+.tab-content p{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    letter-spacing: 1.4px;
 }
 
 /* Features Grid */
@@ -206,6 +215,7 @@
 }
 
 .feature-text {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size: 15px;
   font-weight: 500;
   color: #333;
