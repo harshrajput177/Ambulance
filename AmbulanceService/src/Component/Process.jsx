@@ -2,28 +2,29 @@ import React from 'react';
 import '../Style/process.css';
 
 const ProcessSection = () => {
-  const steps = [
-    {
-      number: '01',
-      title: 'Call at Hotline',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque'
-    },
-    {
-      number: '02',
-      title: 'Describe Matter',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque'
-    },
-    {
-      number: '03',
-      title: 'Set Direction',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque'
-    },
-    {
-      number: '04',
-      title: 'Get Ambulance',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque'
-    }
-  ];
+const steps = [
+  {
+    number: '01',
+    title: 'Call Emergency Hotline',
+    description: 'Contact our emergency helpline immediately and share your exact location for a quick response.'
+  },
+  {
+    number: '02',
+    title: 'Provide Patient Details',
+    description: 'Explain the patient’s condition, symptoms, and type of emergency so the right medical support can be arranged.'
+  },
+  {
+    number: '03',
+    title: 'Ambulance Dispatch',
+    description: 'After verification, the nearest ambulance is dispatched with GPS tracking to reach you as fast as possible.'
+  },
+  {
+    number: '04',
+    title: 'On-Site Medical Care',
+    description: 'Our trained paramedics provide immediate first aid and safely transfer the patient to the hospital.'
+  }
+];
+
 
   return (
     <div className="process-section">

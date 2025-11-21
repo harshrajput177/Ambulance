@@ -1,0 +1,127 @@
+
+
+/* ===================== ContactForm.css ===================== */
+
+.new-contact-wrapper {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #fff5f5, #ffecec);
+  font-family: "Segoe UI", sans-serif;
+}
+
+.new-contact-container {
+  display: flex;
+  gap: 40px;
+  background: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+}
+
+/* LEFT FORM */
+.new-contact-card {
+  flex: 1;
+}
+
+.new-contact-card h2 {
+  margin: 0;
+  color: #d32f2f;
+  font-size: 28px;
+}
+
+.new-contact-card p {
+  color: #666;
+  margin: 10px 0 25px;
+}
+
+.new-form-group {
+  margin-bottom: 18px;
+}
+
+.new-form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.new-contact-form input,
+.new-contact-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  transition: 0.3s;
+}
+
+.new-contact-form input:focus,
+.new-contact-form textarea:focus {
+  border-color: #d32f2f;
+  box-shadow: 0 0 0 2px rgba(211, 47, 47, 0.15);
+}
+
+.new-submit-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #e53935, #b71c1c);
+  border: none;
+  color: #fff;
+  padding: 13px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.new-submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(211, 47, 47, 0.3);
+}
+
+/* RIGHT IMAGE SECTION */
+.new-image-section-amb {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ambulance-image-amb {
+  max-width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 15px rgba(211, 47, 47, 0.6));
+  animation: floatImage 4s ease-in-out infinite, glowPulse 2s ease-in-out infinite;
+}
+
+@keyframes floatImage {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 10px rgba(211, 47, 47, 0.5));
+  }
+  50% {
+    filter: drop-shadow(0 0 25px rgba(255, 0, 0, 0.9));
+  }
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .new-contact-container {
+    flex-direction: column;
+  }
+
+  .new-image-section {
+    margin-top: 20px;
+  }
+}

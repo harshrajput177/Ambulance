@@ -1,5 +1,6 @@
 import React from 'react';
 import { Facebook, Twitter, Instagram, Linkedin, MessageCircle, ChevronUp, MapPin } from 'lucide-react';
+import { FaWhatsapp } from "react-icons/fa";
 import '../Style/Footer.css';
 import img2 from "../../public/Emergency-Light-PNG-removebg-preview.png"
 
@@ -114,12 +115,15 @@ const Footer = () => {
       </div>
 
       {/* Floating Buttons */}
-      <button 
-        className="chat-button-footer" 
-        aria-label="Open chat"
-      >
-        <MessageCircle size={24} />
-      </button>
+  <a 
+  href="https://wa.me/918178505081"
+  target="_blank"
+  rel="noopener noreferrer"
+  className="chat-button-footer"
+  aria-label="Chat on WhatsApp"
+>
+  <FaWhatsapp size={28} style={{ marginRight: "1px" }} />
+</a>
 
       <button 
         className="scroll-top-button" 

@@ -13,7 +13,7 @@ const Navbar = () => {
           <div className="contact-info">
             <a href="tel:+912345432" className="contact-item">
               <Phone size={16} />
-              <span>CALL: +91 (234) 5432</span>
+              <span>CALL: +91 8178505081</span>
             </a>
             <a href="mailto:info@example.com" className="contact-item">
               <Mail size={16} />
@@ -70,14 +70,15 @@ const Navbar = () => {
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-          <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
-            <li><a href="#" className="nav-link active">Home</a></li>
-            <li><a href="#" className="nav-link">About</a></li>
-            <li><a href="#" className="nav-link">Services</a></li>
-            <li><a href="#" className="nav-link">Process</a></li>
-            <li><a href="#" className="nav-link">FAQ</a></li>
-            <li><a href="#" className="nav-link">Contact</a></li>
-          </ul>
+        <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+  <li><a href="#home" className="nav-link active">Home</a></li>
+  <li><a href="#about" className="nav-link">About</a></li>
+  <li><a href="#services" className="nav-link">Services</a></li>
+  <li><a href="#process" className="nav-link">Process</a></li>
+  <li><a href="#faq" className="nav-link">FAQ</a></li>
+  <li><a href="#contact" className="nav-link">Contact</a></li>
+</ul>
+
 
           <div className="nav-actions">
             <button className="quote-btn-nav">Get a Quote</button>

@@ -6,31 +6,54 @@ import Comp4 from '../Component/Process';
 import Comp5 from '../Component/Feature';
 import Comp6 from '../Component/Category';
 import Comp7 from '../Component/FAQ';
-import Comp8 from '../Component/Footer';
+import Comp8 from '../Component/ContactForm';
+import Comp9 from '../Component/Footer';
 
 function ContactPage() {
-
-//   const fadeInUp = {
-//     hidden: { opacity: 0, y: 100 },
-//     visible: { opacity: 1, y: 0, transition: { duration: 0.8 } },
-//   };
-
-
   return (
     <div className="folder-page">
-    <div >
+      <div>
+
+        <div id="home">
           <Comp1 />
+        </div>
+
+        <div id="about">
           <Comp2 />
+        </div>
+
+        <div id="services">
           <Comp3 />
+        </div>
+
+        <div id="process">
           <Comp4 />
+        </div>
+
+        <div id="feature">
           <Comp5 />
+        </div>
+
+        <div id="category">
           <Comp6 />
+        </div>
+
+        <div id="faq">
           <Comp7 />
+        </div>
+
+        <div id="contact">
           <Comp8 />
-   
+        </div>
+
+              <div id="contact">
+          <Comp9 />
+        </div>
+
+      </div>
     </div>
-  </div>
   )
 }
+
 
 export default ContactPage;
