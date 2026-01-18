@@ -1,35 +1,39 @@
 import React from 'react';
 import '../Style/Category.css';
+import img1 from "../../public/Ambulance-india.webp";
+import img2 from "../../public/vehicle-ambulance-medicine-3065190 (1).jpg";
+import img3 from "../../public/selection-013.png";
+import img4 from "../../public/images.jpeg";
 
 const AmbulanceCategory = () => {
   const ambulances = [
     {
       id: 1,
-      type: 'Type VII',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque',
+      type: 'Dead Body Ambulance',
+      description: 'Dead body transfer ke liye specially designed ambulance service.',
       color: 'red',
-      image: 'https://images.unsplash.com/photo-1587745416684-47953f16f02f?w=800&q=80'
+      image: img1
     },
     {
       id: 2,
-      type: 'Type Axta 440',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque',
+      type: 'Hospital Transfer Ambulance',
+      description: 'Patient ko safely ek hospital se dusre hospital le jaane ke liye.',
       color: 'blue',
-      image: 'https://images.unsplash.com/photo-1638202993928-7267aad84c31?w=800&q=80'
+      image: img2
     },
     {
       id: 3,
-      type: 'Vanguard 320',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque',
+      type: 'Medical Ambulance',
+      description: 'Basic medical support ke sath routine patient transport.',
       color: 'green',
-      image: 'https://images.unsplash.com/photo-1582719366216-96b3e4c1c2b3?w=800&q=80'
+      image: img4
     },
     {
       id: 4,
-      type: 'Firebox ICU+',
-      description: 'Lorem ipsum dolor sit amet consectetur. Pellentesque semper pellentesque',
+      type: 'Emergency Fast Ambulance',
+      description: 'Critical emergency ke liye fast response ambulance service.',
       color: 'orange',
-      image: 'https://images.unsplash.com/photo-1614883108514-48710734e5d4?w=800&q=80'
+      image:img3
     }
   ];
 
@@ -37,7 +41,7 @@ const AmbulanceCategory = () => {
     <div className="ambulance-category-section">
       <div className="ambulance-badge">AMBULANCE</div>
       <h1 className="ambulance-title">Ambulance Category</h1>
-      
+
       <div className="ambulance-grid">
         {ambulances.map((ambulance) => (
           <div key={ambulance.id} className={`ambulance-card ${ambulance.color}`}>
@@ -46,8 +50,8 @@ const AmbulanceCategory = () => {
               <p className="ambulance-description">{ambulance.description}</p>
               <button className="quote-btn">Get a Quote</button>
             </div>
-            <img 
-              src={ambulance.image} 
+            <img
+              src={ambulance.image}
               alt={ambulance.type}
               className="ambulance-image"
             />

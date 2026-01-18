@@ -464,4 +464,8 @@ body {
     margin-left: 2%;   /* mobile ke liye aur kam */
     padding: 0 10px;
   }
+
+  .logo-text-NAV{
+    font-size: 21px;
+  }
 }

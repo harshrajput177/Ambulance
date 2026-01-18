@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Plus, Minus } from 'lucide-react';
 import '../Style/FAQSection.css';
 import img1  from "../../public/vehicle-ambulance-medicine-3065190 (1).jpg";
-import img2  from "../../public/nurse-measuring-vital-signs-patient-600nw-2618223483.jpg";
+import img2  from "../../public/branding-2.jpg";
 
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(1); // Second item open by default

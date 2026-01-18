@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Check } from 'lucide-react';
 import '../Style/Services.css';
 import img1 from "../../public/undp-ua-ambulances (1).jpg"
-import img2 from "../../public/view-from-inside-ambulance-uniformed-emergency-services-workers-caring-patient-stretcher-coronavirus-pandemic_657921-1489.jpg"
+import img2 from "../../public/images.jpeg"
 
 const AmbulanceServices = () => {
   const [activeTab, setActiveTab] = useState('medical-support');
@@ -10,7 +10,7 @@ const AmbulanceServices = () => {
   const tabs = [
     { id: 'ambulance-service', label: 'Ambulance Service' },
     { id: 'icu-ambulance', label: 'ICU Ambulance' },
-    { id: 'air-ambulance', label: 'Air Ambulance' },
+    { id: 'Dead-body', label: 'Dead body transfer' },
     { id: 'medical-support', label: 'Medical Support' }
   ];
 

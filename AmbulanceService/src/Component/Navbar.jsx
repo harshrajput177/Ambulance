@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import { Phone, Mail, Facebook, Twitter, Linkedin, Menu, X } from 'lucide-react';
+import { Phone, Mail, Facebook, Twitter, Linkedin, Instagram, Menu, X } from "lucide-react";
+
 import '../Style/LandingCom1.css';
 
 const Navbar = () => {
@@ -11,13 +12,13 @@ const Navbar = () => {
       <div className="top-bar">
         <div className="top-bar-content">
           <div className="contact-info">
-            <a href="tel:+912345432" className="contact-item">
+            <a href="tel:9990453334" className="contact-item">
               <Phone size={16} />
-              <span>CALL: +91 8178505081</span>
+              <span>CALL: +91 9990453334</span>
             </a>
-            <a href="mailto:info@example.com" className="contact-item">
+            <a href="mailto:pluspointambulance@gmail.com" className="contact-item">
               <Mail size={16} />
-              <span>MAIL: info@example.com</span>
+              <span>MAIL: pluspointambulance@gmail.com</span>
             </a>
           </div>
           <div className="top-right">
@@ -31,14 +32,14 @@ const Navbar = () => {
             </div>
             <span className="share-text">SHARE:</span>
             <div className="social-icons">
-              <a href="#" className="social-icon">
+              <a href="https://www.facebook.com/pluspointambulance" className="social-icon">
                 <Facebook size={14} />
               </a>
-              <a href="#" className="social-icon">
-                <Twitter size={14} />
+              <a href="https://www.instagram.com/pluspointambulance/" className="social-icon">
+                <Instagram size={14} />
               </a>
-              <a href="#" className="social-icon">
-                <Linkedin size={14} />
+              <a href="https://x.com/ppambulance" className="social-icon">
+                <Twitter size={14} />
               </a>
               <a href="#" className="social-icon">
                 <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
@@ -59,7 +60,7 @@ const Navbar = () => {
               <rect x="18" y="12" width="4" height="16" fill="white"/>
               <rect x="12" y="18" width="16" height="4" fill="white"/>
             </svg>
-            <span className="logo-text-NAV">Rathor</span>
+            <span className="logo-text-NAV">PlusPointAmbulance</span>
           </div>
 
           <button 
@@ -70,7 +71,7 @@ const Navbar = () => {
             {menuOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
 
-        <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
+  <ul className={`nav-menu ${menuOpen ? 'active' : ''}`}>
   <li><a href="#home" className="nav-link active">Home</a></li>
   <li><a href="#about" className="nav-link">About</a></li>
   <li><a href="#services" className="nav-link">Services</a></li>

@@ -39,7 +39,14 @@ const Footer = () => {
           <div className="footer-column footer-brand">
             <div className="footer-logo">
               <div className="logo-circle">
-                <span className="logo-text">Rathor</span>
+               <div className="logo">
+            <svg width="80" height="80" viewBox="0 0 40 40" fill="none">
+              <path d="M20 5 L35 20 L20 35 L5 20 Z" fill="#E53935"/>
+              <rect x="18" y="12" width="4" height="16" fill="white"/>
+              <rect x="12" y="18" width="16" height="4" fill="white"/>
+            </svg>
+          
+          </div>
               </div>
             </div>
             <h3 className="footer-title">
@@ -94,7 +101,7 @@ const Footer = () => {
               <img className='light-red-footer   light-svg  light-glow' src={img2} alt="" />
               </div>
               <a href="tel:+12463330089" className="emergency-phone">
-                +91 8178505081
+                +91 8383801191
               </a>
             </div>
           </div>
@@ -109,7 +116,7 @@ const Footer = () => {
           </div>
           <div className="footer-address">
             <MapPin size={18} className="address-icon" />
-            <span>88 broklyn silver street, USA</span>
+            <span>B-170 SK, Near Yatharth Hospital, Sector 110 Noida - 201304</span>
           </div>
         </div>
       </div>

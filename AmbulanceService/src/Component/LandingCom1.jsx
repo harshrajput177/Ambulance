@@ -23,21 +23,21 @@ const AmcareLanding = () => {
           <div className="card-icon">📅</div>
           <div className="card-content">
             <span className="card-label">For Booking:</span>
-            <span className="card-value">+91 8178505081 </span>
+            <span className="card-value">+91 8383801191 </span>
           </div>
         </div>
         <div className="contact-card reserve">
           <div className="card-icon">📋</div>
           <div className="card-content">
             <span className="card-label">For Reserve:</span>
-            <span className="card-value">+91 9695911780</span>
+            <span className="card-value">+91 9958813933</span>
           </div>
         </div>
         <div className="contact-card info">
           <div className="card-icon">ℹ️</div>
           <div className="card-content">
             <span className="card-label">For Information:</span>
-            <span className="card-value">+91 8178505081</span>
+            <span className="card-value">+91 9990453334</span>
           </div>
         </div>
       </div>
