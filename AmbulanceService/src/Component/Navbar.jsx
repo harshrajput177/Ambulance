@@ -81,9 +81,17 @@ const Navbar = () => {
 </ul>
 
 
-          <div className="nav-actions">
-            <button className="quote-btn-nav">Get a Quote</button>
-          </div>
+     <div className="nav-actions">
+  <button
+    className="quote-btn-nav"
+    onClick={() => {
+      window.location.href = "/#contact";
+    }}
+  >
+    Get a Quote
+  </button>
+</div>
+
         </div>
       </nav>
     </>

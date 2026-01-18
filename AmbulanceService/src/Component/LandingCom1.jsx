@@ -1,5 +1,7 @@
 import React from 'react';
 import '../Style/LandingCom1.css';
+import { Phone } from 'lucide-react';
+
 
 const AmcareLanding = () => {
   return (
@@ -13,7 +15,19 @@ const AmcareLanding = () => {
             These services are designed to reach the scene of an emergency quickly,
             equipped with advanced medical equipment.
           </p>
-          <button className="hero-cta">Get a Quote</button>
+      <div className="hero-actions">
+  <button
+  
+    className="hero-cta call"
+    onClick={() => window.location.href = "tel:+919990453334"}
+  >
+   <Phone size={20} /> &nbsp; 
+ Call Now
+  </button>
+
+
+</div>
+
         </div>
       </section>
 

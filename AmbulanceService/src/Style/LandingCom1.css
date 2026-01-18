@@ -256,6 +256,9 @@ body {
 }
 
 .hero-cta {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   background: #E53935;
   color: white;
   border: none;

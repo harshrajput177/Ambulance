@@ -133,7 +133,14 @@ const AmbulanceServices = () => {
 
             </div>
 
-            <button className="get-quote-btn">Get a Quote</button>
+           <button
+    className="quote-btn-nav"
+    onClick={() => {
+      window.location.href = "/#contact";
+    }}
+  >
+    Get a Quote
+  </button>
           </div>
 
           {/* Right Content - Images */}
