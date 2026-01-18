@@ -24,9 +24,9 @@ const Footer = () => {
   ];
 
   const socialLinks = [
-    { icon: <Facebook size={18} />, href: '#facebook', label: 'Facebook' },
-    { icon: <Twitter size={18} />, href: '#twitter', label: 'Twitter' },
-    { icon: <Instagram size={18} />, href: '#instagram', label: 'Instagram' },
+    { icon: <Facebook size={18} />, href: 'https://www.facebook.com/pluspointambulance', label: 'Facebook' },
+    { icon: <Twitter size={18} />, href: 'https://x.com/ppambulance', label: 'Twitter' },
+    { icon: <Instagram size={18} />, href: 'https://www.instagram.com/pluspointambulance/', label: 'Instagram' },
     { icon: <Linkedin size={18} />, href: '#linkedin', label: 'LinkedIn' }
   ];
 
@@ -40,7 +40,7 @@ const Footer = () => {
             <div className="footer-logo">
               <div className="logo-circle">
                <div className="logo">
-            <svg width="80" height="80" viewBox="0 0 40 40" fill="none">
+            <svg width="85" height="85" viewBox="0 0 40 40" fill="none">
               <path d="M20 5 L35 20 L20 35 L5 20 Z" fill="#E53935"/>
               <rect x="18" y="12" width="4" height="16" fill="white"/>
               <rect x="12" y="18" width="16" height="4" fill="white"/>
@@ -111,7 +111,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <div className="footer-copyright">
             <p>
-              Copyright 2025 by <a href="#" className="copyright-link">Amcare</a> All Right Reserved.
+              Copyright 2025 by <a href="/" className="copyright-link">PlusPoint</a> All Right Reserved.
             </p>
           </div>
           <div className="footer-address">
@@ -123,7 +123,7 @@ const Footer = () => {
 
       {/* Floating Buttons */}
   <a 
-  href="https://wa.me/918178505081"
+  href="https://wa.me/919990453334"
   target="_blank"
   rel="noopener noreferrer"
   className="chat-button-footer"

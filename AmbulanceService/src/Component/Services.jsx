@@ -14,6 +14,62 @@ const AmbulanceServices = () => {
     { id: 'medical-support', label: 'Medical Support' }
   ];
 
+
+  const servicesData = {
+  'ambulance-service': {
+    title: 'Ambulance Service',
+    description:
+      'Our ambulance services ensure safe, timely, and professional patient transportation with trained medical staff and fully equipped vehicles for all non-critical and emergency needs.',
+    features: [
+      'Quick Response Time',
+      'Trained Drivers',
+      'Basic Life Support',
+      'Safe Patient Transport',
+      '24/7 Availability'
+    ]
+  },
+
+  'icu-ambulance': {
+    title: 'ICU Ambulance',
+    description:
+      'ICU ambulances are designed for critically ill patients, equipped with advanced life-saving equipment and accompanied by skilled paramedics and doctors.',
+    features: [
+      'Ventilator Support',
+      'Cardiac Monitoring',
+      'Experienced Paramedics',
+      'Advanced Medical Equipment',
+      'Critical Care Transport'
+    ]
+  },
+
+  'Dead-body': {
+    title: 'Dead Body Transfer',
+    description:
+      'We provide dignified and respectful dead body transfer services, ensuring proper handling, hygiene, and timely transportation as per legal and family requirements.',
+    features: [
+      'Respectful Handling',
+      'Hygienic Transfer',
+      'Long Distance Transport',
+      '24/7 Service',
+      'Affordable Pricing'
+    ]
+  },
+
+  'medical-support': {
+    title: 'Medical Support',
+    description:
+      'Our medical support services provide trained healthcare professionals, on-site medical assistance, and emergency readiness for events, homes, and workplaces.',
+    features: [
+      'Qualified Medical Staff',
+      'Emergency Assistance',
+      'On-site Medical Care',
+      'Flexible Support Plans',
+      '24/7 Assistance'
+    ]
+  }
+};
+
+
   const features = [
     { icon: <Check size={18} />, text: 'Medical Necessity' },
     { icon: <Check size={18} />, text: 'Flexible Payment' },
@@ -55,23 +111,26 @@ const AmbulanceServices = () => {
         <div className="services-content-box">
           {/* Left Content */}
           <div className="content-left">
-            <h3 className="content-title">Medical Support</h3>
-            <p className="content-description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec fella, 
-              suscipit you have action against fraud. See it the Security Center for and 
-              Mobile and Online Banking.
-            </p>
+          <h3 className="content-title">
+  {servicesData[activeTab].title}
+</h3>
+
+<p className="content-description">
+  {servicesData[activeTab].description}
+</p>
+
 
             {/* Features Grid */}
             <div className="content-features">
-              {features.map((feature, index) => (
-                <div key={index} className="content-feature-item">
-                  <div className="content-feature-icon">
-                    {feature.icon}
-                  </div>
-                  <span className="content-feature-text">{feature.text}</span>
-                </div>
-              ))}
+           {servicesData[activeTab].features.map((text, index) => (
+  <div key={index} className="content-feature-item">
+    <div className="content-feature-icon">
+      <Check size={18} />
+    </div>
+    <span className="content-feature-text">{text}</span>
+  </div>
+))}
+
             </div>
 
             <button className="get-quote-btn">Get a Quote</button>
