@@ -347,7 +347,8 @@ body {
   .top-bar-content {
     flex-direction: column;
     gap: 10px;
-    text-align: center;
+
+
   }
 
   .contact-info {
@@ -444,7 +445,18 @@ body {
     font-size: 28px;
   }
 
+    .top-bar-content {
+       margin: 0;
+       padding: 0 16px;
+       align-items:start;
+    flex-direction: column;
+    gap: 10px;
+    text-align: left !important;
+  }
+
+
   .contact-info {
+    align-items: left;
     font-size: 12px;
   }
 
