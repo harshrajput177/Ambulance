@@ -5,7 +5,7 @@ import img1 from "../../public/undp-ua-ambulances (1).jpg"
 import img2 from "../../public/images.jpeg"
 
 const AmbulanceServices = () => {
-  const [activeTab, setActiveTab] = useState('medical-support');
+  const [activeTab, setActiveTab] = useState('ambulance-service');
 
   const tabs = [
     { id: 'ambulance-service', label: 'Ambulance Service' },
