@@ -2,10 +2,16 @@ import React, { useState } from 'react';
 import { Phone, Mail, Facebook, Twitter, Linkedin, Instagram, Menu, X } from "lucide-react";
 
 import '../Style/LandingCom1.css';
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
+  const navigate = useNavigate()
+
+  const handleClick = ()=>{
+    navigate("/")
+  }
   return (
     <>
       {/* Top Bar */}
@@ -60,7 +66,7 @@ const Navbar = () => {
               <rect x="18" y="12" width="4" height="16" fill="white"/>
               <rect x="12" y="18" width="16" height="4" fill="white"/>
             </svg>
-            <span className="logo-text-NAV">PlusPointAmbulance</span>
+            <span className="logo-text-NAV" onClick={handleClick}>PlusPointAmbulance</span>
           </div>
 
           <button 
