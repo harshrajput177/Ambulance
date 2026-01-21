@@ -100,8 +100,8 @@ const Footer = () => {
               <div className="emergency-light-footer">
               <img className='light-red-footer   light-svg  light-glow' src={img2} alt="" />
               </div>
-              <a href="tel:+12463330089" className="emergency-phone">
-                +91 8383801191
+              <a href="tel:+917065666767" className="emergency-phone">
+                +91 7065666767
               </a>
             </div>
           </div>
