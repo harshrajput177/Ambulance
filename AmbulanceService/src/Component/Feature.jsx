@@ -11,10 +11,10 @@ const FeaturesSection = () => {
           <circle cx="12" cy="12" r="3" />
         </svg>
       ),
-      title: 'Secure Transport',
-      description: 'Amcare secure transport services play a critical role in healthcare system, providing safe and reliable'
+      title: 'Safe & Secure Transport',
+      description:
+        'PlusPoint Ambulance ensures safe and secure patient transportation with trained staff, modern ambulances, and strict medical safety standards.'
     },
-
     {
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -23,10 +23,10 @@ const FeaturesSection = () => {
           <path d="M12 12h.01M9 15h6" />
         </svg>
       ),
-      title: 'On Demand Service',
-      description: 'Amcare secure transport services play a critical role in healthcare system, providing safe and reliable'
+      title: '24/7 On-Demand Ambulance',
+      description:
+        'Our 24/7 on-demand ambulance service ensures quick response and immediate medical assistance whenever an emergency occurs.'
     },
-
     {
       icon: (
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -34,31 +34,48 @@ const FeaturesSection = () => {
           <path d="M12 5.67L9.5 8.17" strokeLinecap="round" />
         </svg>
       ),
-      title: 'Emergency Transport',
-      description: 'Amcare secure transport services play a critical role in healthcare system, providing safe and reliable'
+      title: 'Emergency Medical Response',
+      description:
+        'PlusPoint Ambulance specializes in fast emergency medical response with experienced paramedics and advanced life-saving equipment.'
     }
-
-    
   ];
 
   return (
-    <div className="features-section-FS">
-      <div className="features-badge-FS">FEATURES</div>
-      <h1 className="features-title-FS">Why Choose Us</h1>
-      
+    <section className="features-section-FS" id="features">
+      <span className="features-badge-FS">FEATURES</span>
+
+      {/* ❌ h1 removed → SEO correct */}
+      <h2 className="features-title-FS">
+        Why Choose PlusPoint Ambulance
+      </h2>
+
+      {/* 🔥 Hidden SEO text */}
+      <p className="sr-only">
+        PlusPoint Ambulance provides 24/7 emergency ambulance services with
+        secure patient transport, fast response time, trained paramedics,
+        and modern medical equipment.
+      </p>
+
       <div className="features-grid-FS">
         {features.map((feature, index) => (
           <div key={index} className="feature-card-FS">
             <div className="icon-circle-FS">
               {feature.icon}
             </div>
+
             <h3 className="feature-title-FS">{feature.title}</h3>
             <p className="feature-description-FS">{feature.description}</p>
-            <button className="learn-more-btn-FS">Learn More</button>
+
+            <button
+              className="learn-more-btn-FS"
+              aria-label={`Learn more about ${feature.title}`}
+            >
+              Learn More
+            </button>
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 

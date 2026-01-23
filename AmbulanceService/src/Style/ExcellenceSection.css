@@ -184,9 +184,10 @@
 
 .tab-content p{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     letter-spacing: 1.4px;
-     color: #666;
+    font-weight: 340;
+     color: #535353;
 }
 
 /* Features Grid */

@@ -7,24 +7,29 @@ import img2  from "../../public/branding-2.jpg";
 const FAQSection = () => {
   const [openIndex, setOpenIndex] = useState(1); // Second item open by default
 
-  const faqs = [
-    {
-      question: 'What types of medical emergencies do you handle?',
-      answer: 'Our ambulance service is equipped to handle a wide range of medical emergencies, including trauma, cardiac events, respiratory distress, strokes, and more.'
-    },
-    {
-      question: 'What equipment do your ambulances carry?',
-      answer: 'Our ambulance service is equipped to handle a wide range of medical emergencies, including trauma.'
-    },
-    {
-      question: 'Do you provide inter-facility transfers?',
-      answer: 'Yes, we provide safe and reliable inter-facility transfers with trained medical staff and proper equipment.'
-    },
-    {
-      question: 'Are your services covered by insurance?',
-      answer: 'Most insurance plans cover our emergency ambulance services. We work with major insurance providers to ensure coverage.'
-    }
-  ];
+const faqs = [
+  {
+    question: 'What medical emergencies does PlusPoint Ambulance handle?',
+    answer:
+      'PlusPoint Ambulance provides fast and reliable emergency ambulance services for trauma cases, cardiac emergencies, breathing problems, strokes, accidents, and other critical medical situations.'
+  },
+  {
+    question: 'What medical equipment is available in PlusPoint Ambulances?',
+    answer:
+      'Our ambulances are fully equipped with oxygen support, stretchers, emergency kits, and advanced life-saving medical equipment to ensure patient safety during transit.'
+  },
+  {
+    question: 'Does PlusPoint Ambulance provide hospital-to-hospital transfers?',
+    answer:
+      'Yes, PlusPoint Ambulance offers safe and professional inter-facility ambulance transfers with trained staff and properly equipped vehicles.'
+  },
+  {
+    question: 'Is PlusPoint Ambulance service available 24/7?',
+    answer:
+      'Yes, PlusPoint Ambulance operates 24/7 to provide quick-response emergency ambulance services whenever you need medical assistance.'
+  }
+];
+
 
   const toggleFAQ = (index) => {
     setOpenIndex(openIndex === index ? null : index);
@@ -61,13 +66,16 @@ const FAQSection = () => {
           </div>
 
           {/* Experience Badge */}
-          <div className="experience-badge-faq">
-            <div className="badge-number">15</div>
-            <div className="badge-text-wrapper">
-              <span className="badge-years">Years</span>
-              <span className="badge-description">of Experience in the Finance Service</span>
-            </div>
-          </div>
+        <div className="experience-badge-faq">
+  <div className="badge-number">15</div>
+  <div className="badge-text-wrapper">
+    <span className="badge-years">Years</span>
+    <span className="badge-description">
+      of Experience in Emergency Ambulance Services
+    </span>
+  </div>
+</div>
+
 
           {/* Decorative Dots Bottom */}
           <div className="dots-decoration dots-bottom">
@@ -79,10 +87,13 @@ const FAQSection = () => {
 
         {/* Right Side - FAQ Content */}
         <div className="faq-content">
-          <div className="faq-header">
-            <span className="faq-badge">GENERAL FAQS</span>
-            <h2 className="faq-title">Taking all your questions to reality.</h2>
-          </div>
+       <div className="faq-header">
+  <span className="faq-badge">PLUSPOINT AMBULANCE FAQ</span>
+  <h2 className="faq-title">
+    Frequently Asked Questions About PlusPoint Ambulance Services
+  </h2>
+</div>
+
 
           <div className="faq-list">
             {faqs.map((faq, index) => (

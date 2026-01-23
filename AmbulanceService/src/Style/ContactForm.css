@@ -93,7 +93,7 @@
 .ambulance-image-amb {
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0 0 15px rgba(211, 47, 47, 0.6));
+  filter: drop-shadow(0 0 15px rgba(255, 79, 100, 0.6));
   animation: floatImage 4s ease-in-out infinite, glowPulse 2s ease-in-out infinite;
 }
 
@@ -124,4 +124,8 @@
   .new-image-section {
     margin-top: 20px;
   }
+}
+
+.sr-only{
+  display: none;
 }

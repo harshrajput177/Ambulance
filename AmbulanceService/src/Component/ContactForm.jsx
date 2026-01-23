@@ -22,14 +22,17 @@ function Contact() {
 
     const whatsappNumber = "919990453334"; // 👈 apna WhatsApp number (country code ke sath)
 
-    const whatsappMessage = `
-🚑 *Ambulance Enquiry*
+const whatsappMessage = `
+🚑 *PlusPoint Ambulance Enquiry*
 
 👤 Name: ${formData.name}
 📧 Email: ${formData.email}
 📞 Phone: ${formData.phone}
 💬 Message: ${formData.message}
-    `;
+
+📍 Service: 24/7 Emergency Ambulance
+`;
+
 
     const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(
       whatsappMessage
@@ -43,8 +46,12 @@ function Contact() {
       <div className="new-contact-container">
         {/* Left Side - Form */}
         <div className="new-contact-card">
-          <h2>Get In Touch</h2>
-          <p>We'd love to hear from you. Please fill out the form below.</p>
+         <h2>Contact PlusPoint Ambulance</h2>
+<p>
+  Get in touch with PlusPoint Ambulance for fast, reliable, and 24/7 emergency
+  ambulance services. Our team is always ready to help.
+</p>
+
 
           <form className="new-contact-form" onSubmit={handleSubmit}>
             <div className="new-form-group">
@@ -101,11 +108,16 @@ function Contact() {
         <div className="new-image-section-amb">
           <img
             src={ambulanceImg}
-            alt="Ambulance"
+             alt="PlusPoint Ambulance – 24/7 Emergency Medical Service"
             className="ambulance-image-amb"
           />
         </div>
       </div>
+      <p className="sr-only">
+  PlusPoint Ambulance provides 24/7 emergency ambulance services with trained
+  medical staff and fast response time.
+</p>
+
     </div>
   );
 }

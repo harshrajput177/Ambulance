@@ -9,57 +9,85 @@ const AmbulanceCategory = () => {
   const ambulances = [
     {
       id: 1,
-      type: 'Dead Body Ambulance',
-      description: 'Dead body transfer ke liye specially designed ambulance service.',
+      type: 'Dead Body Ambulance Service',
+      description:
+        'PlusPoint Ambulance provides respectful and safe dead body transfer services with trained staff and proper arrangements.',
       color: 'red',
       image: img1
     },
     {
       id: 2,
       type: 'Hospital Transfer Ambulance',
-      description: 'Patient ko safely ek hospital se dusre hospital le jaane ke liye.',
+      description:
+        'Safe and reliable patient transfer ambulance service from one hospital to another with medical supervision.',
       color: 'blue',
       image: img2
     },
     {
       id: 3,
-      type: 'Medical Ambulance',
-      description: 'Basic medical support ke sath routine patient transport.',
+      type: 'Medical Support Ambulance',
+      description:
+        'Basic medical ambulance service for routine patient transport with essential medical support.',
       color: 'green',
       image: img4
     },
     {
       id: 4,
       type: 'Emergency Fast Ambulance',
-      description: 'Critical emergency ke liye fast response ambulance service.',
+      description:
+        '24/7 fast emergency ambulance service with quick response time for critical medical situations.',
       color: 'orange',
-      image:img3
+      image: img3
     }
   ];
 
   return (
-    <div className="ambulance-category-section">
-      <div className="ambulance-badge">AMBULANCE</div>
-      <h1 className="ambulance-title">Ambulance Category</h1>
+    <section className="ambulance-category-section" id="services">
+      <span className="ambulance-badge">AMBULANCE SERVICES</span>
+
+      {/* ✅ h1 avoided – SEO safe */}
+      <h2 className="ambulance-title">
+        Ambulance Services Offered by PlusPoint Ambulance
+      </h2>
+
+      {/* 🔥 Hidden SEO content */}
+      <p className="sr-only">
+        PlusPoint Ambulance offers 24/7 emergency ambulance services including
+        hospital transfer, dead body ambulance, medical support ambulance, and
+        fast emergency response services.
+      </p>
 
       <div className="ambulance-grid">
         {ambulances.map((ambulance) => (
-          <div key={ambulance.id} className={`ambulance-card ${ambulance.color}`}>
+          <div
+            key={ambulance.id}
+            className={`ambulance-card ${ambulance.color}`}
+          >
             <div className="ambulance-overlay">
               <h3 className="ambulance-type">{ambulance.type}</h3>
-              <p className="ambulance-description">{ambulance.description}</p>
-              <button className="quote-btn">Get a Quote</button>
+              <p className="ambulance-description">
+                {ambulance.description}
+              </p>
+              <button
+                className="quote-btn"
+                aria-label={`Get quote for ${ambulance.type}`}
+              >
+                Get a Quote
+              </button>
             </div>
+
             <img
               src={ambulance.image}
-              alt={ambulance.type}
-              className="ambulance-image"
+              alt={`PlusPoint Ambulance ${ambulance.type}`}
+              className="ambulance-service-image"
+              loading="lazy"
             />
           </div>
         ))}
       </div>
-    </div>
+    </section>
   );
 };
 
 export default AmbulanceCategory;
+

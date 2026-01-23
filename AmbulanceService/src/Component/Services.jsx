@@ -91,7 +91,7 @@ const AmbulanceServices = () => {
         {/* Header */}
         <div className="services-header">
           <span className="services-badge">OUR SERVICES</span>
-          <h2 className="services-title">Expert Ambulance Services</h2>
+          <h2 className="services-title">PlusPoint Ambulance Services</h2>
         </div>
 
         {/* Tabs */}
@@ -148,14 +148,14 @@ const AmbulanceServices = () => {
             <div className="helicopter-image">
               <img 
                 src={img2} 
-                alt="Air Ambulance Helicopter"
+                alt="pluspoint-ambulance-image"
                 className="helicopter-img"
               />
             </div>
             <div className="paramedic-image">
               <img 
                 src={img1} 
-                alt="Paramedic Staff"
+                alt="pluspoint-ambulance-image"
                 className="paramedic-img"
               />
             </div>

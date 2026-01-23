@@ -49,9 +49,10 @@ const Footer = () => {
           </div>
               </div>
             </div>
-            <h3 className="footer-title">
-              The Fastest and Secure Ambulance Service
-            </h3>
+           <h3 className="footer-title">
+  PlusPoint Ambulance – Fast & Secure Emergency Medical Service
+</h3>
+
             <div className="footer-social">
               {socialLinks.map((social, index) => (
                 <a 
@@ -98,7 +99,7 @@ const Footer = () => {
           <div className="footer-column footer-emergency">
             <div className="emergency-card-footer">
               <div className="emergency-light-footer">
-              <img className='light-red-footer   light-svg  light-glow' src={img2} alt="" />
+              <img className='light-red-footer   light-svg  light-glow' src={img2} alt="ambulance-light" />
               </div>
               <a href="tel:+917065666767" className="emergency-phone">
                 +91 7065666767
@@ -110,9 +111,12 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="footer-bottom">
           <div className="footer-copyright">
-            <p>
-              Copyright 2025 by <a href="/" className="copyright-link">PlusPoint</a> All Right Reserved.
-            </p>
+ <p>
+  © 2025 <a href="/" className="copyright-link">PlusPoint Ambulance</a>.
+  All Rights Reserved.
+</p>
+
+
           </div>
           <div className="footer-address">
             <MapPin size={18} className="address-icon" />
@@ -122,15 +126,16 @@ const Footer = () => {
       </div>
 
       {/* Floating Buttons */}
-  <a 
+ <a 
   href="https://wa.me/919990453334"
   target="_blank"
   rel="noopener noreferrer"
   className="chat-button-footer"
-  aria-label="Chat on WhatsApp"
+  aria-label="Chat with PlusPoint Ambulance on WhatsApp"
 >
-  <FaWhatsapp size={28} style={{ marginRight: "1px" }} />
+  <FaWhatsapp size={28} />
 </a>
+
 
       <button 
         className="scroll-top-button" 
@@ -139,6 +144,12 @@ const Footer = () => {
       >
         <ChevronUp size={24} />
       </button>
+
+      <p className="sr-only">
+  PlusPoint Ambulance provides 24/7 emergency ambulance services in Noida with
+  fast response, trained staff, and 15+ years of experience.
+</p>
+
     </footer>
   );
 };
