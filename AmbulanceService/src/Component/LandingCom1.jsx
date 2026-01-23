@@ -19,8 +19,6 @@ const LandingCom1 = () => {
     "url": "https://pluspointambulance.online",
     "logo": "https://pluspointambulance.online",
     "telephone": "+91-9990453334",
-    "telephone": "+91-7065666767",
-     "telephone": "+91-8383801191",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
